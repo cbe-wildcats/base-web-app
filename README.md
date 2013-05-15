@@ -19,7 +19,7 @@ These libraries are included in this repository. If you want to use this base st
 * [AMD CoffeeScript loader plugin](https://github.com/jrburke/require-cs) 0.4.3 with [experimental source map support](https://gist.github.com/lavrton/5425945)
 * [CoffeeScript](https://github.com/jashkenas/coffee-script) 1.6.2
 * [LESS](https://github.com/cloudhead/less.js) 1.4.0 beta 4
-* [Bootstrap](https://github.com/twitter/bootstrap) 2.3.1
+* [Bootstrap](https://github.com/twitter/bootstrap) 2.3.1 (minimally configured; enable features in `src/lib/bootstrap/bootstrap.less`!)
 
 Usage
 -----
