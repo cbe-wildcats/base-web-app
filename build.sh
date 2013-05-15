@@ -14,10 +14,10 @@ lessc build/work/style.less build/work/css.css
 
 r.js -o build.js
 
-# HACK: lib/almond.js contains entire app because it's the entry point
 mv build/minified/lib/almond.js build/js.js
 mv build/minified/css.css build/css.css
 mv build/minified/release.html build/index.html
 mv build/minified/lib/almond.js.map build
-#rm -rf build/work
-#rm -rf build/minified
+
+rm -rf build/work
+rm -rf build/minified
