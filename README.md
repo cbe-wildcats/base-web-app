@@ -14,12 +14,12 @@ Libraries
 
 These libraries are included in this repository. If you want to use this base structure, please check the version of these libraries.
 
-* [Require.js](https://github.com/jrburke/requirejs) 2.1.6
-* [Almond](https://github.com/jrburke/almond) 0.2.5
+* [Require.js](https://github.com/jrburke/requirejs) 2.1.10
+* [Almond](https://github.com/jrburke/almond) 0.2.9
 * [AMD CoffeeScript loader plugin](https://github.com/jrburke/require-cs) 0.4.3 with [experimental source map support](https://gist.github.com/lavrton/5425945)
-* [CoffeeScript](https://github.com/jashkenas/coffee-script) 1.6.2
-* [LESS](https://github.com/cloudhead/less.js) 1.4.0 beta 4
-* [Bootstrap](https://github.com/twitter/bootstrap) 2.3.1 (minimally configured; enable features in `src/lib/bootstrap/bootstrap.less`!)
+* [CoffeeScript](https://github.com/jashkenas/coffee-script) 1.7.1
+* [LESS](https://github.com/cloudhead/less.js) 1.6.3
+* [Bootstrap](https://github.com/twitter/bootstrap) 3.1.0 (minimally configured; enable features in `src/lib/bootstrap/bootstrap.less`!)
 
 Usage
 -----

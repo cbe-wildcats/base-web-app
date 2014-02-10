@@ -23,7 +23,7 @@
 	generateSourceMaps: true,
 	uglify2: {
 		output: {
-			ie_proof: false,
+			screw_ie8: true,
 			space_colon: false,
 		},
 		compress: {
