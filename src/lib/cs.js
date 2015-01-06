@@ -1,5 +1,5 @@
 /**
- * @license cs 0.4.3 Copyright (c) 2010-2011, The Dojo Foundation All Rights Reserved.
+ * @license cs 0.5.0 Copyright (c) 2010-2011, The Dojo Foundation All Rights Reserved.
  * Available via the MIT or new BSD license.
  * see: http://github.com/jrburke/require-cs for details
  */
@@ -285,7 +285,24 @@ define(['coffee-script'], function (CoffeeScript) {
                 try {
                     compiled = CoffeeScript.compile(text, opts);
                 } catch (err) {
-                    err.message = "In " + path + ", " + err.message;
+                    var msg = err.message;
+                    var loc = err.location;
+                    err.message = path;
+
+                    if(loc.first_line === loc.last_line) {
+                        err.message += ', line ' + (loc.first_line + 1);
+                    }
+                    else {
+                        err.message += ', lines ' + (loc.first_line + 1);
+                        if(isNaN(loc.last_line)) {
+                            err.message += '+';
+                        }
+                        else {
+                            err.message += '-' + (loc.last_line + 1);
+                        }
+                    }
+
+                    err.message += ': ' + msg;
                     throw err;
                 }
                 text = compiled.js;
